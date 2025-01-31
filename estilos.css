@@ -6,7 +6,11 @@
 }
 
 
+body{
 
+  background: linear-gradient(to right, #f8f9fa, #e3e6eb); /* Tons claros e sutis */
+  color: #333; /* Mantém o texto legível */
+}
 
 .imgbann{
 
@@ -92,61 +96,63 @@ justify-content: space-evenly;
 
 }
 
-/* Estilização da tabela de planos com a paleta do Disney+ */
-.tabela-planos {
-    width: 80%;
-    margin: 2rem auto;
-    border-collapse: collapse;
-    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-    border-radius: 0.625rem;
-    overflow: hidden;
-    background-color: #FFFFFF;
-    color: #000000;
-    font-family: Arial, sans-serif;
+.cards_plano{
+
+  display: flex;
+  align-items: baseline;
+
 }
 
-.tabela-planos th, .tabela-planos td {
-    padding: 1rem;
-    text-align: center;
-    border: 0.0625rem solid #ccc;
+.preco{
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
 }
 
-.tabela-planos th {
-    background-color:#FFFFFF;
-    color: #00A8E1;
-    font-size: 1.25rem;
+.icons{
+  display: flex;
+  gap: 0.4rem;
+  align-items: center;
+
+}
+.cardpremi{
+
+  background-color: rgba(251, 255, 0, 0.452);
+  font-weight: bolder;
+  color: #FFFFFF;
+  margin-top: 1rem;
+
+}
+.cardbas{
+
+background-color: #ffffffcb;
+
+
+}
+.cardpad{
+
+  background-color: rgba(106, 144, 248, 0.315);
+  font-weight: 500;
+  color: #FFFFFF;
+
 }
 
-.tabela-planos tr:nth-child(even) {
-    background-color: #F8F9FA;
+.cards_plano {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Espaço entre os cards */
+  flex-wrap: wrap;
 }
 
-.tabela-planos tr:hover {
-    background-color: #D6E4F0;
+.card {
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
-.tabela-planos .plano-destaque {
-    background-color: #005CBF;
-    color: white;
-    font-weight: bold;
-}
-
-.botao-assinar {
-    display: inline-block;
-    padding: 0.625rem 1.25rem;
-    margin-top: 0.625rem;
-    color: white;
-    background-color: #00A8E1;
-    border: none;
-    border-radius: 0.3125rem;
-    cursor: pointer;
-    text-decoration: none;
-    transition: 0.3s;
-    font-size: 1rem;
-}
-
-.botao-assinar:hover {
-    background-color: #0086B3;
+.card:hover {
+  transform: scale(1.1); /* Aumenta o card em 10% */
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); /* Adiciona um efeito de sombra */
 }
 
 
@@ -159,4 +165,29 @@ justify-content: space-evenly;
   padding: 100px;
   --bs-bg-opacity: 0.2;
   color: #FFFFFF;
+}
+
+
+.vide {
+  width: 100%;
+  height: auto; /* Ou ajuste conforme necessário */
+  display: block;
+  align-items: center;
+}
+
+/* Estilização para o conteúdo ficar visível sobre o vídeo */
+.content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 20%;
+}
+
+.back{
+
+  background-color: #FFFFFF !important;
+
 }
