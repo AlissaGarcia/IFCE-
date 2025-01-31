@@ -8,7 +8,7 @@
 
 body{
 
-  background: linear-gradient(to right, #f8f9fa, #e3e6eb); /* Tons claros e sutis */
+  background: linear-gradient(to right, #9eb2c7, #213350); /* Tons claros e sutis */
   color: #333; /* Mantém o texto legível */
 }
 
@@ -189,5 +189,12 @@ background-color: #ffffffcb;
 .back{
 
   background-color: #FFFFFF !important;
+
+}
+
+.inicio{
+
+  margin-top: 0;
+
 
 }
