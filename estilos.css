@@ -1,0 +1,162 @@
+
+*{
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+
+
+
+.imgbann{
+
+width: 8rem;
+height: 4rem;
+margin-left: 4rem;
+margin-top: 1rem;
+margin-block-end: 1rem;
+
+}
+
+.flex{
+
+display: flex;
+align-self: flex-end;
+gap: 0;
+margin: 0;
+padding: 0%;
+justify-content: space-evenly;
+
+
+
+
+}
+
+.container-fluid{
+
+  
+  background-image: url(assets/background.PNG);
+  background-attachment: fixed;
+  
+
+}
+
+
+.nav-link{
+
+  color: white;
+
+}
+.col {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.col.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card {
+  max-width: 300px; 
+  height: auto; 
+  margin: auto; 
+}
+
+.carousel-item {
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.cards{
+
+  background-image: url(assets/background.PNG);
+  background-attachment: fixed;
+
+}
+
+/* Estilização da tabela de planos com a paleta do Disney+ */
+.tabela-planos {
+    width: 80%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+    border-radius: 0.625rem;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+.tabela-planos th, .tabela-planos td {
+    padding: 1rem;
+    text-align: center;
+    border: 0.0625rem solid #ccc;
+}
+
+.tabela-planos th {
+    background-color:#FFFFFF;
+    color: #00A8E1;
+    font-size: 1.25rem;
+}
+
+.tabela-planos tr:nth-child(even) {
+    background-color: #F8F9FA;
+}
+
+.tabela-planos tr:hover {
+    background-color: #D6E4F0;
+}
+
+.tabela-planos .plano-destaque {
+    background-color: #005CBF;
+    color: white;
+    font-weight: bold;
+}
+
+.botao-assinar {
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+    margin-top: 0.625rem;
+    color: white;
+    background-color: #00A8E1;
+    border: none;
+    border-radius: 0.3125rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.botao-assinar:hover {
+    background-color: #0086B3;
+}
+
+
+.banner-1{
+  background-image: url(assets/background.PNG);
+  background-attachment: fixed;
+}
+
+.banners-titulo {
+  padding: 100px;
+  --bs-bg-opacity: 0.2;
+  color: #FFFFFF;
+}
