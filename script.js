@@ -18,4 +18,36 @@ document.addEventListener("DOMContentLoaded", function () {
     }); 
   });
 
-  
+ // Função para lançar confetes na posição do clique
+function lançarConfetes(event) {
+  confetti({
+    particleCount: 150,
+    spread: 70,
+    origin: {
+      x: event.clientX / window.innerWidth,  // Normaliza a posição X
+      y: event.clientY / window.innerHeight  // Normaliza a posição Y
+    }
+  });
+}
+
+// Selecionar todos os botões "Assinar Plano"
+document.addEventListener("DOMContentLoaded", function() {
+  const botoes = document.querySelectorAll(".btn-primary");
+
+  botoes.forEach(botao => { 
+    botao.addEventListener("click", function(event) {
+        event.preventDefault(); // Evita recarregar a página
+
+        lançarConfetes(event);  // Passa o evento de clique  
+
+        Swal.fire({
+            title: "Parabéns pela compra! Você assinou nosso plano \uD83D\uDE0E",
+            text: "Confira na fatura do seu cartão de crédito! \uD83D\uDE0F ",
+            icon: "success",
+            confirmButtonText: "Ok"
+        });
+
+      
+    });
+});
+});

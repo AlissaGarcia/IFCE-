@@ -12,6 +12,8 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./estilos.css">  
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.4.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   </head>
 <body id="body">
 <header>
@@ -56,10 +58,10 @@
 
 <section class="back">
   <hr>
-  <h1 class="text-center">Seja Bem-vindo ao IFCE+</h1>
-<div class="text-success">
+  <h1 class="text-center color">Seja Bem-vindo ao IFCE+</h1>
+
   <hr>
-</div>
+
 
 </section>
 
@@ -84,91 +86,191 @@
 <hr>
 <h1 class="text-center">Aqui você pode desfrutar de diversas opões de Filmes e Séries</h1>
 <p class="fw-light text-center">Tudo que está em alta no universo de stramming você pode encontrar aqui!</p>
-<div class="text-success">
+
 <hr>
 </div>
 </section>
-<br>
+
 <section class="cards">
 
+  <br>
 
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-  <div class="col">
-    <div class="card h-100">
-      <img src="assets/card2.jpg" class="card-img-top" alt="Banner do filme do Chico Bento">
-      <div class="card-body">
-        <h5 class="card-title">Chico Bento e a Goiabeira Maraviósa</h5>
-        <p class="card-text">Baseado na série de histórias em quadrinhos criada por Mauricio de Sousa, produzido pela Biônica Filmes, em coprodução com a Mauricio de Sousa Produções e a Paris Entretenimento.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="assets/card3.jpg" class="card-img-top" alt="Banner do filme auto da compadecida">
-      <div class="card-body">
-        <h5 class="card-title">Auto da Compadecida 2</h5>
-        <p class="card-text">Os malandros João Grilo e Chicó retornam 25 anos depois da sua última aventura.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img src="assets/CARD5.jpeg" class="card-img-top" alt="Banner do filme Alien">
-      <div class="card-body">
-        <h5 class="card-title">Alien Romulus</h5>
-        <p class="card-text">Um grupo de jovens colonizadores espaciais se aventuram nas profundezas de uma estação espacial abandonada. Lá, eles descobrem uma forma de vida aterrorizante, forçando-os a lutar por sua sobrevivência.</p>
-      </div>
-      <div class="card-footer">
-        <small class="text-body-secondary">Last updated 3 mins ago</small>
-      </div>
-    </div>
-  </div>
+ <h4 class="text-light"> Filmes em alta > </h4>
+
+<section class="filmes">
+
+  <a href="#escolha-plano" style="text-decoration: none; color: inherit; display: inline-block;">
+    <div class="card col" style="position: relative; display: inline-block; width: fit-content; overflow: hidden; border: none;">
+      <img src="assets/Banner 1.png" class="img-fluid rounded-start banner" alt="Banner do Filme">
   
-</div>  
-<br>  
+      <div class="card-info">
+        <div class="card-body">
+          <h5 class="card-title">Shrek</h5>
+          <p class="card-text">O filme Shrek conta a história de um ogro que vive sozinho em um pântano e que vê sua vida invadida por criaturas de contos de fada.</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+  <a href="#escolha-plano" style="text-decoration: none; color: inherit; display: inline-block;">
+    <div class="card col" style="position: relative; display: inline-block; width: fit-content; overflow: hidden; border: none;">
+      <img src="assets/Banner 2.png" class="img-fluid rounded-start banner" alt="Banner do Filme">
+  
+      <div class="card-info">
+        <div class="card-body">
+          <h5 class="card-title">Gladiador II</h5>
+          <p class="card-text"> filme de ação e aventura ambientado na Roma Antiga. O filme é a sequência do clássico de 2000 Gladiador e foi dirigido por Ridley Scott. </p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+
+  <a href="#escolha-plano" style="text-decoration: none; color: inherit; display: inline-block;">
+    <div class="card col" style="position: relative; display: inline-block; width: fit-content; overflow: hidden; border: none;">
+      <img src="assets/Banner 4.png" class="img-fluid rounded-start banner" alt="Banner do Filme">
+  
+      <div class="card-info">
+        <div class="card-body">
+          <h5 class="card-title">The good half</h5>
+          <p class="card-text">conta a história de Renn Wheeland, um escritor que volta para Cleveland para o funeral da mãe. O filme é um drama e comédia e conta com a participação de Nick Jonas.</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+
+  <a href="#escolha-plano" style="text-decoration: none; color: inherit; display: inline-block;">
+    <div class="card col" style="position: relative; display: inline-block; width: fit-content; overflow: hidden; border: none;">
+      <img src="assets/Banner 7.png" class="img-fluid rounded-start banner" alt="Banner do Filme">
+  
+      <div class="card-info">
+        <div class="card-body">
+          <h5 class="card-title">Five Nights at Freddy's </h5>
+          <p class="card-text">O Pesadelo Sem Fim é um filme de terror de 2023 que conta a história de um jovem que trabalha como segurança noturno em uma pizzaria abandonada. </p>
+        </div>
+      </div>
+    </div>
+  </a>
+
 </section>
 
 
-<section class="back">
-  <hr>
-  <h1 class="text-center">A plataforma de streaming que vai fazer parte da sua família</h1>
-  <p class="fw-light text-center">Conteúdos agradáveis para assistir em conjunto!</p>
-  <div class="text-success">
-  <hr>
-  </div>
-  </section>
- 
+<h4 class="text-light"> Séries em alta   > </h4>
+
+<section class="series">
+
+
+  <a href="#escolha-plano" style="text-decoration: none; color: inherit; display: inline-block;">
+    <div class="card col" style="position: relative; display: inline-block; width: fit-content; overflow: hidden; border: none;">
+      <img src="assets/Banner 3.png" class="img-fluid rounded-start banner" alt="Banner do Filme">
+  
+      <div class="card-info">
+        <div class="card-body">
+          <h5 class="card-title">Galinha Pintadinha</h5>
+          <p class="card-text">A Galinha Pintadinha é uma personagem de uma série de animação infantil que conta com histórias, músicas e brincadeiras.</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+
+  
+  <a href="#escolha-plano" style="text-decoration: none; color: inherit; display: inline-block;">
+    <div class="card col" style="position: relative; display: inline-block; width: fit-content; overflow: hidden; border: none;">
+      <img src="assets/Banner 5.png" class="img-fluid rounded-start banner" alt="Banner do Filme">
+  
+      <div class="card-info">
+        <div class="card-body">
+          <h5 class="card-title">The vampire diaries</h5>
+          <p class="card-text">série de TV americana de drama, romance e terror, que conta a história de Elena Gilbert e dos irmãos vampiros Stefan e Damon Salvatore.</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+
+
+  
+  <a href="#escolha-plano" style="text-decoration: none; color: inherit; display: inline-block;">
+    <div class="card col" style="position: relative; display: inline-block; width: fit-content; overflow: hidden; border: none;">
+      <img src="assets/Banner 6.png" class="img-fluid rounded-start banner" alt="Banner do Filme">
+  
+      <div class="card-info">
+        <div class="card-body">
+          <h5 class="card-title">Todo mundo odeia o Cris</h5>
+          <p class="card-text">sitcom semi-autobiográfica que conta a história de Chris Rock, um adolescente negro que vive no Brooklyn, Nova York, na década de 1980. </p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+
+
+  
+  <a href="#escolha-plano" style="text-decoration: none; color: inherit; display: inline-block;">
+    <div class="card col" style="position: relative; display: inline-block; width: fit-content; overflow: hidden; border: none;">
+      <img src="assets/Banner 8.png" class="img-fluid rounded-start banner" alt="Banner do Filme">
+  
+      <div class="card-info">
+        <div class="card-body">
+          <h5 class="card-title">Pocoyo</h5>
+          <p class="card-text">é uma série de animação que conta a história de um menino curioso e divertido que está em constante busca de novas aventuras.</p>
+        </div>
+      </div>
+    </div>
+  </a>
+
+
+
+
   
 
 
-<section class="video"> 
-  <video class="vide" autoplay loop muted>
-    <source class="video1" src="assets/Vídeo tumb.mp4" type="video/mp4">
-    Seu navegador não suporta vídeos HTML5.
-</video>
 
 
 
-<section class="back ">
+</section>
+
+
+</section>
+
+
+<br>
+
+
+  <section class="video-container banner-1">
+    <video class="vide" autoplay loop muted>
+      <source class="video1" src="assets/Vídeo Promocional ifce+.mp4" type="video/mp4">
+      Seu navegador não suporta vídeos HTML5.
+    </video>
+  
+    <div class="video-text">
+      <section>
+       
+        <h1 class="text-center">A plataforma de streaming que vai fazer parte da sua família</h1>
+        <p class="fw-light text-center">Conteúdos agradáveis para assistir em conjunto!</p>
+        
+        </section>
+    </div>
+  </section>
+
+
+
+<section id="escolha-plano" class="back ">
   <hr>
 <h1 class="text-center ">Escolha já seu plano!</h1>
 <p class="fw-light text-center">Acessível e com bom conteúdo? Só aqui no IFCE+!</p>
-<div class="text-success">
+
 <hr>
-</div>
+
 </section>
-<section class="cards_plano banner-1 banners-titulo ">
+<section class="cards_plano banner-1 banners-titulo">
 
 <div class="card cardbas text-center mb-3" style="width: 18rem;">
   <div class="card-body">
     <h3 class="card-title">Plano Básico</h3>
-    <hr>
+    <hr>   
     <section class="icons"><i class="bi bi-arrow-repeat"></i><p class="card-text">2 dispositivos simultaneos</p></section>
     <section class="icons"><i class="bi bi-aspect-ratio"></i><p class="card-text">Resolução Full HD</p></section>
     
@@ -239,17 +341,11 @@
   <hr>
 <h1 class="text-center ">Está esperando o que? Não perca mais tempo!</h1>
 <p class="fw-light text-center">Acessível e com bom conteúdo? Só aqui no IFCE+!</p>
-<div class="text-success">
+
 <hr>
 </div>
 </section>
 
-
-<section class="banners banner-1 d-flex flex-column justify-content-center text-center">
-  <div class="banners-titulo bg-body-secondary">
-    <h2 class="h2_titulo"><strong>Sua pausa para desfrutar o melhor em filmes e séries!</strong></h2>    
-  </div>
-</section>
 
 
 
@@ -283,7 +379,7 @@
 
     <hr class="my-3">
 
-    <p class="mb-0">&copy; 2024 IFCE+ - Todos os direitos reservados.</p>
+    <p class="mb-0">&copy; 2025 IFCE+ - Todos os direitos reservados.</p>
   </div>
 </footer>
 
